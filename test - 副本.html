@@ -1,0 +1,103 @@
+<!Doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>bootstrap笔记</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	</script>
+  <style>
+		/* reset */
+		body, div, ul, li {
+			margin:0;
+			padding:0;
+			list-style: none;
+			border: 0;
+		}
+		body{
+			background: #fff;
+		}
+		/* wrap */
+		#box {
+			position: relative;
+			width: 502px;
+			height: 202px;
+			margin: 10px auto;
+			border: 8px solid #002232;
+		}
+		/* image */
+		#box .list-image {
+			width: 500px;
+			height: 200px;
+			overflow: hidden;
+		}
+		#box .list-image li {
+			border: 1px solid purple;
+			width: 500px;
+			height: 200px;
+			/*这里也设置宽高，解决的是默认行间距问题*/
+		}
+		#box .list-image li img {
+			width: 500px;
+			height: 200px;
+		}
+		/* number */
+		#box .list-number {
+			position: absolute;
+			right: 0;
+			bottom: 5px;
+		}
+		#box .list-number li {
+			float: left;
+			margin-right: 10px;
+			width: 20px;
+			height: 20px;
+			font: 12px / 20px Arial;
+			border-radius: 10px;
+			background-color: #f60;
+			text-align: center;
+			color: #fff;
+			opacity: 0.7;
+			filter: alpha(opacity = 70);
+			cursor: pointer;
+		}
+		#box .list-number li.current {
+			opacity: 1;
+			filter: alpha(opacity=100);
+		}
+	</style>
+</head>
+<body>
+</head>
+<body>
+	<div id="box">
+    <ul class="list-image">
+      <li><img src="pic1.jpg" width="500px" height="200px"></li>
+      <li><img src="pic2.jpg" width="500px" height="200px"></li>
+      <li><img src="pic3.jpg" width="500px" height="200px"></li>
+      <li><img src="pic4.jpg" width="500px" height="200px"></li>
+      <li><img src="pic5.jpg" width="500px" height="200px"></li>
+    </ul>
+  </div>
+</body>
+ <script>
+	  const oBox = document.getElementById("box");
+		const oUl = oBox.getElementsByTagName("ul")[0];
+		const oImage = oUl.getElementsByTagName("li");
+		// 根据图片 li 的个数生成同样数量的 按钮 li
+		let eleArr = [];
+			for (let i = 0; i < oImage.length; i++) {
+				eleArr.push("<li>" + (i + 1) + "</li>");
+			}
+		// 创建节点元素并且添加节点元素至 html 里面
+			var oEle = document.createElement("ul");
+			oEle.className = "list-number";
+			oEle.innerHTML = eleArr.join("");
+			oBox.appendChild(oEle);
+ </script>
+</html>

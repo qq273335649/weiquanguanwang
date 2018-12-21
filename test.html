@@ -1,0 +1,124 @@
+<!Doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>bootstrap笔记</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	</script>
+ 
+</head>
+<body>
+	<!-- .container固定宽度1170px .container-fluid 宽度为100%-->
+	<div class="container-fluid">
+		<h1 class="page-header">产品展示</h1>
+		<h2 class="page-header">标题下加线</h2>
+ 
+		 <!-- <small>副标题，小一号   </small>  <big>  副标题 大一号</big> -->
+		<h1 class="page-header">新闻<small>内容</small></h1>
+		<p>段落文字大小14px    	<strong>推荐使用的加粗</strong> <del>推荐使用的删除线</del> </p>
+ 
+		<!--设置文本对齐方式.text-center  .text-left   .text-center  -->
+		<h2 class="page-header  text-center">空格隔开多个属性</h2>  
+	
+		<!--.设置英文大小写 .text-lowercase 小写 .text-uppercase 大写 .text-capitalize首字母大写-->
+		<p class="text-uppercase">文本大写asdfasdfas</p>  
+		<p class="text-capitalize">首字母大写sdfaasf</p>
+ 
+		<!--列表-->
+		<h3 class="page-header">列表</h3>
+		<!-- 列表去掉前面的前缀和格式 .list-unstyled  纵向变成横向.list-inline-->
+	  	<ul class="list-unstyled list-inline">
+	  		<li>html</li>
+	  		<li>css</li>
+	  		<li>php</li>
+	  		<li>mysql</li>
+	 	 </ul>
+ 
+ 
+	 	 <!-- 自定义列表 .dl-horizontal 变成横向排列-->
+	 	 <h3 class="page-header">自定义列表</h3>
+	 	  <dl class="dl-horizontal">
+	 	  	<dt>标题</dt>
+	 	  	<dd>标题解释</dd>
+	 	  </dl>
+	</div>
+	<!--test-->
+			<div id="test" style=" background: #ccc"></div>
+<script type="text/javascript">
+			autodivheight();
+			function autodivheight(){ //函数：获取尺寸
+			//获取浏览器窗口高度
+			var winHeight=0;
+			if (window.innerHeight){
+			winHeight = window.innerHeight;
+			}
+			else if ((document.body) && (document.body.clientHeight)){
+			winHeight = document.body.clientHeight;
+			}
+			//通过深入Document内部对body进行检测，获取浏览器窗口高度
+			if (document.documentElement && document.documentElement.clientHeight){
+			winHeight = document.documentElement.clientHeight;
+			}
+			//DIV高度为浏览器窗口的高度
+			//document.getElementById("test").style.height= winHeight +"px";
+			//DIV高度为浏览器窗口高度的一半
+			document.getElementById("test").style.height= winHeight/2 +"px";
+			}
+			window.onresize=autodivheight; //浏览器窗口发生变化时同时变化DIV高度
+</script>
+		<!--test-->
+	    <div class="container table-responsive">
+	 	  	<!--响应式表格，给table的父元素加，以移动设备为优先，如果内容不能完全显示，有滚动条-->
+	 	  	<p>响应式表格，给table的父元素加，以移动设备为优先，如果内容不能完全显示，有滚动条,状态类设置的是tr或td,active success  info  danger  warning</p>
+ 
+	 	  	<!-- table格式 .table-border 加外边框 .table-hover 鼠标悬停效果 .table-striped 隔行换色效果 .table-condensed 变紧凑-->
+ 
+	 	  	<table class="table table-border table-hover table-striped table-condensed">
+	 	  		<tr class="active">
+	 	  			<td>产品编号</td>
+	 	  			<td>产品名称</td>
+	 	  			<td>发货状态</td>
+	 	  		</tr>
+	 	  		<tr class="success">
+	 	  			<td>0001</td>
+	 	  			<td>奥迪</td>
+	 	  			<td>未发货</td>
+	 	  		</tr>
+	 	  		<tr class="info">
+	 	  			<td>0002</td>
+	 	  			<td>奥拓</td>
+	 	  			<td>已发货</td>
+	 	  		</tr>
+	 	  		<tr class="danger">
+	 	  			<td>0003</td>
+	 	  			<td>艾玛</td>
+	 	  			<td>退货</td>
+	 	  		</tr>
+	 	  		<tr class="warning">
+	 	  			<td>0004</td>
+	 	  			<td>绿箭</td>
+	 	  			<td>未接收</td>
+	 	  		</tr>
+ 
+	 	  	</table>
+	    </div>
+ 
+	<div class="container-fluid" style="background:#fffff;">
+		<!-- .img-responsive 响应式图片 .img-circle 椭圆形图片 .img-rounded 圆角图片 img-thumbnail圆角边框-->
+		<h3 class="page-header">响应式图片</h3>
+		<img src="ff.jpg" class="img-responsive img-thumbnail">
+ 
+		<!-- 栅格系统-->
+		<p>栅格系统 一定要放入容器中,浏览器窗口自动分配最多12列，是由行row和列col组成</p>
+	</div>
+ 
+	
+</body>
+ 
+</html>

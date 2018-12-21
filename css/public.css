@@ -1,0 +1,63 @@
+/* @media screen and (max-width: 414px)  {
+	#shouye{
+		height: 150px;;
+	}
+}
+@media (min-width: 414px) and (max-width: 640px)  {
+	#shouye{
+		height: 190px;;
+	}
+}
+@media (min-width: 640px) and (max-width: 768px)  {
+	#shouye{
+		height: 350px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+	#shouye{
+		height: 460px;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1200px){
+	#shouye{
+		height: 535px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1920px) {
+	#shouye{
+		height: 640px;
+	}
+}
+@media (min-width: 1920px){
+	#shouye{
+		height: 850px;
+	}
+} */
+@media (min-width: 1920px){
+.container {
+    width: 1874px;
+}
+}
+/* font */
+body h4,h6{
+	font-size: 1rem;
+	text-align: center;
+}
+#tab1 h4,#tab1 p{
+	font-size: 1.6rem;
+	text-align: center;
+}
+body p{
+	font-size: 1.5rem;
+}
+.title-blue{
+	color: #30b4ff;
+	font-size: 2.8rem;
+	font-weight: 500;
+}
+.title-black{
+	font-size: 2.2rem;
+}
+#tab2 h4,#tab2 p{
+	text-align: left;
+}

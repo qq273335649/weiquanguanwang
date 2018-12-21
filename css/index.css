@@ -1,0 +1,104 @@
+/* font */
+body p{
+	font-size: 1.5rem;
+}
+.title-blue{
+	color: #30b4ff;
+	font-size: 2.8rem;
+	font-weight: 500;
+}
+.title-black{
+	font-size: 2.2rem;
+}
+#tab2 h4,#tab2 p{
+	text-align: left;
+}
+/*reset*/
+.navbar-default{
+	background: url(../img/wq_header.jpg) no-repeat;
+	border-color: transparent;
+}
+body .nav>li{
+	/* background-color: #47bcff; */
+	background: url(../img/wq_header.jpg) no-repeat;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	border-color: transparent;
+}
+.wq-nav li a{
+	color: #ffffff!important;
+}
+.navbar-default .navbar-nav>.active>a{
+	background-color: initial!important;
+	border-bottom: 1px solid #ffffff;
+}
+/* tab bg */
+#shouye{
+	margin-top: 50px;
+	background-image: url(../img/shouye_banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	text-align: center;
+}
+#tab1{
+	background:url(../img/tab1_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#tab2{
+	/* background-image: url(../img/tab2_bg.jpg); */
+	background:url(../img/tab2_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#tab3{
+	/* background-image: url(../img/tab3_bg.jpg); */
+	background:url(../img/tab3_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#tab3 .lei_bg{
+	background-image: url(../img/tab_3_pic.png);
+	background-size: 100% 100%;
+}
+#tab4{
+	/* background-image: url(../img/tab_4_bg.jpg); */
+	background:url(../img/tab_4_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#tab7{
+	/* background-image: url(../img/tab_7_bg.jpg); */
+	background:url(../img/tab_7_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#tab8{
+	/* background-image: url(../img/tab_8_bg.jpg); */
+	background:url(../img/tab_8_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+/* tab1 */
+#tab1 .row{
+	display: flex;
+	align-items: center;
+	padding: 10% 0 15% 0;
+}
+#tab1 .thumbnail{
+	box-shadow: darkgrey 1px 1px 1px;
+	padding: 10% 5px 5% 5px;
+}
+#tab1 .thumbnail p span{
+	display: block;
+	text-align: left;
+	text-indent: 1.6rem;
+}
+
+#tab1 .thumbnail p,#tab1 .thumbnail span{
+	color: #999999;
+	line-height: 2.4rem;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+}
+#tab1 .thumbnail h4{
+	font-weight: 550;
+	font-size: 1.8rem;
+	margin-bottom: 5%;
+}
