@@ -39,9 +39,10 @@
 }
 }
 /* font */
-body h4,h6{
+body h6,body h4{
 	font-size: 1rem;
 	text-align: center;
+	font-weight: 600;
 }
 #tab1 h4,#tab1 p{
 	font-size: 1.6rem;
@@ -56,8 +57,38 @@ body p{
 	font-weight: 500;
 }
 .title-black{
-	font-size: 2.2rem;
+	font-size: 2rem;
 }
 #tab2 h4,#tab2 p{
 	text-align: left;
+}
+#tab2 p,#tab3 p{
+	color: #b6b6b6;
+}
+#tab3 h6{
+	font-size: 2rem;
+}
+#tab3 .lei_bg{
+	text-align: center;
+}
+#tab3 .lei_bg h6{
+	font-size: 1.8rem;
+}
+#tab5 .carousel-control.left,#tab5 .carousel-control.right{
+	background-image:initial;
+}
+#tab5 .title-blue{
+	line-height: 4rem;
+}
+#tab5 .title-black{
+	line-height: 4rem;
+}
+#tab6 b{
+	font-size: 2rem;
+}
+#tab6 small{
+	color: #999999;
+}
+#tab6 .caption p{
+	letter-spacing: 2px;
 }
